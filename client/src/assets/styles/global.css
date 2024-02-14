@@ -1,0 +1,49 @@
+@font-face {
+    font-family: subFont;
+    src: url(../fonts/Mali-Regular.ttf);
+}
+@font-face {
+    font-family: mainFont;
+    src: url("../fonts/vont.otf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    box-sizing: border-box;
+}
+:root{
+    /* color */
+    --baseColor : white;
+    --primaryColor: #FF1C1C;
+    --altColor: black;
+    --main-ButtonColor: #FF5D39;
+
+    /* spacing */
+    --spacing-side:0 100px;
+
+    min-width: 100vw;
+    overflow-x: hidden;
+    background: var(--primaryColor);
+    font-family: subFont;
+}
+
+
+
+a{
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+h1{
+    font-size: 3.4rem;
+    font-family: mainFont;
+}
+p{
+    font-size: 22px;
+    max-width: 450px;
+}
