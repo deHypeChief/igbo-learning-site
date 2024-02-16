@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom'
 import { Button } from '../button/button'
 import './style.css'
+import { useEffect } from 'react'
 
 export default function Navbar(){
     const navLinks = [
@@ -18,6 +19,21 @@ export default function Navbar(){
         }
     ] 
 
+    useEffect(()=>{
+        const nav = document.getElementsByTagName('nav')[0]
+        const navWrap = document.getElementsByClassName('navWrap')[0]
+        let offset = 50
+        document.onscroll = (e)=>{
+            if(scrollY > offset){
+                nav.style.background = "white"
+                navWrap.style.padding = "10px 70px"
+            }
+            if(scrollY < offset -10){
+                nav.style.background = "transparent"
+                navWrap.style.padding = "20px 70px"
+            }
+        }
+    }, [])
 
     return(
         <nav>

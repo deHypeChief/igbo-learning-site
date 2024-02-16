@@ -6,6 +6,8 @@ import { Button } from '../components/button/button'
 import fImg1 from '../assets/images/3d-illustration-sand-clock-isolated-white-removebg-preview 1.png'
 import fImg2 from '../assets/images/question-mark-bubble-speech-sign-icon-3d-rendering_47987-15901-removebg-preview 1.png'
 import fImg3 from '../assets/images/Red_play_button_3d_vector_illustration-removebg-preview 1.png'
+import { Link } from 'react-router-dom'
+import Navbar from '../components/navbar/navbar'
 
 export default function Home() {
     const featuresList = [
@@ -46,6 +48,7 @@ export default function Home() {
 
     return (
         <>
+        <Navbar/>
             <section className="hero">
                 <div className="heroWrap">
                     <div className="heroContent">
@@ -98,6 +101,43 @@ export default function Home() {
                     }
                 </div>
             </section>
+
+            <section className="commu">
+                <div className="commuPlayWrap">
+                    <div className="commuPlay">
+                        <div className="playCard"></div>
+                    </div>
+                    <div className="commuText">
+                        <h1>Learn with
+                            our Community</h1>
+                        <p>Kids love fun and that is where we come in, with various amazing topics for your kids </p>
+                        <Button>Follow Us</Button>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div className="footerTop">
+                    <div className="footopWrap">
+                        <div className="fooLogo">Logo</div>
+                        <div className="fooLink">
+                            <Link to="/">Home</Link>
+                            <Link to="/">About</Link>
+                            <Link to="/">Topics</Link>
+                        </div>
+                        <div className="fooButton">
+                            <p>Youtube</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="footerBottom">
+                    <p>text A</p>
+                    <p>text B</p>
+                </div>
+            </footer>
         </>
     )
-} 
+
+}
+
+

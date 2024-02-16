@@ -1,0 +1,108 @@
+.admin{
+    display: flex;
+    color: white;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.adminSide{
+    position: fixed;
+    width:260px;
+    height: 100vh;
+    background: black;
+    padding-top: 40px;
+}
+.adminLogo{
+    padding-bottom: 40px;
+    padding-left: 50px;
+}
+.adminList{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.adminLinks{
+    width: 100%;
+    padding: 12px 0;
+    padding-left: 50px;
+}
+.adminList .active{
+    background: rgba(255, 255, 255, 0.098);
+    border-right: 3px solid var(--primaryColor);
+}
+.adminLinks:hover{
+    background: rgba(255, 255, 255, 0.098);
+    border-right: 5px solid var(--primaryColor);
+}
+.adminLinks:hover p{
+    font-weight: 600;
+}
+.active p{
+    font-weight: 600;
+}
+.adminLinks p{
+    font-size: 17px;
+}
+.adminLogo h1{
+    font-size: 1.8rem;
+}
+.adminContent{
+    flex: 1;
+    background: white;
+    color: black;
+    padding: 40px 40px 0 300px;
+}
+.adminTop{
+    display: flex;
+    justify-content: space-between;
+}
+.adminTopText p{
+    font-size: 15px;
+}
+
+.adminSpace{
+    display: grid;
+    grid-template-areas: 
+    "aaa aaa bbb bbb ccc ccc"
+    "ddd ddd ddd ddd ccc ccc"
+    "eee eee eee eee ccc ccc"
+    "eee eee eee eee fff fff"
+    "eee eee eee eee fff fff";
+    gap: 15px;
+    padding: 40px 0 80px;
+}
+
+.spaceBox{
+    background: black;
+    color: white;
+    padding: 40px;
+}
+.usersSpace{
+    height: 150px;
+    width: 100%;
+    grid-area: aaa;
+    
+}
+.badgesSpace{
+    grid-area: bbb;
+}
+.QuickInfoSpace{
+    grid-area: ccc;
+}
+.CurrentTaskSpace{
+    width: 100%;
+    height: 200px;
+    grid-area: ddd;
+}
+.workDoneSpace{
+    width: 100%;
+    height: 350px;
+    grid-area: eee;
+}
+.topSpace{
+    width: 100%;
+    height: 200px;
+    grid-area: fff;
+}
+
+
+
